@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s -o /dev/null http://localhost:3000/api/health)",
+      "Bash(break)",
+      "Bash(curl -s http://localhost:3000/api/config)",
+      "Bash(curl -s http://localhost:3000/api/sheets/config)",
+      "Bash(python3 -c \"import urllib.parse;print\\(urllib.parse.quote\\('순둥이랑 클로드 합작'\\)\\)\")",
+      "Bash(rm -f src/lib/firebase.ts firebase-applet-config.json)",
+      "Bash(rmdir src/lib)",
+      "Bash(npm run *)",
+      "Bash(echo \"=== lint exit: $? ===\")",
+      "Bash(curl -s http://localhost:3000/)",
+      "Bash(curl -s \"http://localhost:3000/api/sheets/load?spreadsheetId=1IbU-GuRa9lP0FR5fPDiOvufQxrGngRsQNbhzekLq8eM&sheetName=$\\(python3 -c \"import urllib.parse;print\\(urllib.parse.quote\\('순둥이랑 클로드 합작'\\)\\)\"\\)\")",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\('rows loaded:', len\\(d.get\\('values',[]\\)\\), '| resolvedSheet:', d.get\\('resolvedSheetName'\\)\\)\")",
+      "Bash(gcloud --version)",
+      "Bash(gcloud config *)",
+      "Bash(docker --version)"
+    ]
+  }
+}

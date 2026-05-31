@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-kakao: #FEE500;
+  --color-kakao-dark: #191919;
+  --color-brand-start: #3b82f6;
+  --color-brand-end: #1d4ed8;
+}
+
+/* App transition effects */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.4s ease-out forwards;
+}
+
+/* Button & interactive states */
+.btn-kakao {
+  background-color: var(--color-kakao);
+  color: #191919;
+  transition: all 0.2s ease-in-out;
+}
+.btn-kakao:hover {
+  background-color: #f7df00;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(254, 229, 0, 0.2);
+}
+
+/* Custom scrollbars for spreadsheet table */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(156, 163, 175, 0.3);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(156, 163, 175, 0.5);
+}

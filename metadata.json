@@ -1,0 +1,6 @@
+{
+  "name": "금강·경원 일원 토지등소유자 명부 관리",
+  "description": "카카오 로그인 이후 토지등소유자 명부 구글 스프레드를 효율적으로 요약, 분석하고 실시간으로 관리 및 편집하는 안전한 통합 플랫폼",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
